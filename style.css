@@ -1,0 +1,283 @@
+
+
+
+
+#maincontainer {
+    border: 2px solid black;
+    width: 100%;
+    position: relative;
+}
+#mc{
+    width:900%;
+    font-size: 1in;
+    background-color: blanchedalmond;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    left: 5in;
+
+}
+#subcontainer{
+    width: 80%;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+#span1 {
+    font-size: 10rem;
+    background-color: aqua;
+   position: static;
+    z-index: 1;
+    
+}
+#para {
+    width: 2.25in;
+    font-size: 2rem;
+    background: red;
+    position: absolute;
+    top:2in;
+    left: .5in;
+
+}
+#span2 {
+    font-size: 10rem;
+    background-color: antiquewhite;
+    position: relative;
+    left: 45px;
+}
+
+#div1 {
+    width: 80%;
+    height: 20rem;
+    background-color: orange;
+    font-size: 10rem;
+    position: relative;
+    top:50px;
+    left: 300px;
+   
+
+}
+#div2 {
+    width: 40%;
+    height: 200px;
+    background-color: lightgreen;
+    font-size: 10rem;
+    position: relative;
+    top: 1.75in;
+   
+
+}
+
+#div3 {
+    width: 50%;
+    height: 600px;
+    background-color: peachpuff;
+    font-size: 10rem;
+    position: relative;
+    left: 7in;
+    bottom: 1in;
+
+    
+}
+#float{
+    width: 2in;
+    height: 2in;
+    background-color:azure;
+    border: 1px solid black;
+    position: fixed;
+    top: 1in;
+    right: 0.75in;
+    z-index: 2;
+
+}
+
+#subcontainer1{
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 1in;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    
+    grid-template-rows:repeat(180px,8);
+
+
+
+
+    grid-gap: 40px;
+
+}
+
+#span11 {
+    font-size: 8rem;
+    background-color: aqua;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-row-start: 1;
+   grid-row-end: 3;
+    z-index: 1;
+    
+}
+#para1 {
+    width: 180px;
+    height: 360px;
+    font-size: 1rem;
+    background: red;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+#span12 {
+    font-size: 8rem;
+    background-color: antiquewhite;
+
+    grid-column-start: 4;
+   grid-column-end: 7;
+   grid-row-start: 1;
+   grid-row-end: 3;
+    
+}
+
+#div11 {
+    
+    
+    background-color: orange;
+    font-size: 6rem;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 6;
+
+   
+   
+
+}
+#div12 {
+   
+    background-color: lightgreen;
+    font-size: 10rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+   
+   
+
+}
+
+#div13 {
+   
+    background-color: peachpuff;
+    font-size: 10rem;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 9;
+   
+}
+#subcontainer2{
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 1in;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+        'span1 span1 span2 span2 .' 
+        'side div1 div1 div1 . '
+        'side . div3 div3 div3'
+        'div2 div2 div3 div3 div3 '
+        '. . div3 div3 div3';
+    grid-gap: 40px;
+
+}
+
+#span21 {
+    font-size: 8rem;
+    background-color: aqua;
+ grid-area: span1;
+    z-index: 1;
+    
+}
+#para2 {
+    
+    font-size: 2.5rem;
+    background: red;
+   grid-area: side;
+    
+
+}
+#span22 {
+    font-size: 8rem;
+    background-color: antiquewhite;
+
+    grid-area: span2;
+    
+}
+
+#inner {
+    width: 200px;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    
+}
+#list1{
+    list-style: none;
+    width: 800px;
+   
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    
+    
+}
+
+#div21 {
+    
+    
+    background-color: orange;
+    font-size: 2rem;
+    grid-area: div1;
+}
+#div22 {
+   
+    background-color: lightgreen;
+    font-size: 10rem;
+    grid-area: div2;
+   
+   
+
+}
+.gridblock{
+    width: 375px;
+    height: 250px;
+    background-color:azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div23 {
+   
+    background-color: peachpuff;
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: repeat(3 , 300px);
+    grid-gap: 15px;
+   grid-area: div3;
+   justify-content: center;
+   align-items: center;
+   
+}
